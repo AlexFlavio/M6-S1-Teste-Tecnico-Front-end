@@ -6,5 +6,3 @@ const API = axios.create({
 });
 
 export default API;
-
-// https://frontend-challenge-7bu3nxh76a-uc.a.run.app

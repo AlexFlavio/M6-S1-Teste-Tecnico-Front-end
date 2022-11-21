@@ -1,4 +1,4 @@
-import { TextField, Box, Paper, Button, Collapse } from "@mui/material";
+import { TextField, Button, Collapse } from "@mui/material";
 import { TransitionGroup } from "react-transition-group";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -19,7 +19,6 @@ export const DaysList = () => {
     formState: { errors },
   } = useForm({ resolver: yupResolver(schema) });
 
-  console.log(days);
 
   return (
     <div style={{ width: "100%" }}>

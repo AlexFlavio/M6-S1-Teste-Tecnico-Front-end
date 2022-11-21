@@ -1,6 +1,4 @@
 import { createContext, useState } from "react";
-import { toast } from "react-toastify";
-import API from "../services/api";
 
 export const DataContext = createContext({});
 
@@ -15,8 +13,6 @@ export const DataProvider = ({ children }) => {
       setDays(newArr);
     }
   };
-
-  console.log(returnedData);
 
   return (
     <DataContext.Provider

@@ -49,8 +49,6 @@ export const Form = ({ children }) => {
     if (days.length >= 1) {
       enviteData.days = [...days];
     }
-
-    console.log(requiredData);
     toast.promise(
       API.post("", enviteData).then((res) => {
         const array = [];
